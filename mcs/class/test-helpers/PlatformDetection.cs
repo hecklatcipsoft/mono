@@ -31,6 +31,8 @@ namespace System
 
 		public static bool IsNetfx462OrNewer => false;
 
+		public static bool IsSsl2AndSsl3Supported => false;
+
 		public static bool IsWindows {
 			get {
 				PlatformID id = Environment.OSVersion.Platform;
@@ -38,7 +40,6 @@ namespace System
 			}
 		}
 		public static bool IsInAppContainer => false;
-		public static bool IsRedHatFamily6 => false;
 		public static bool IsAlpine => false;
 		public static bool IsNetCore => false;
 	}
